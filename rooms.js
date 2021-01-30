@@ -18,7 +18,7 @@ var firebaseConfig = {
       purpose: "adding a room"
     });
     localStorage.setItem("Roomname", room_name);
-    window.location = "kwitter_page.html";
+    window.location = "chat_page.html";
   }
   document.getElementById("user_name").innerHTML = "Welcome " + user_name + "!";
   function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
